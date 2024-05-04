@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Product Comparison Tool</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<!-- Search bar -->
+	<div class="search-bar">
+		<input type="text" id="search-input" placeholder="Search products">
+		<button id="search-button">Search</button>
+	</div>
+	
+	<!-- Search results -->
+	<div class="search-results">
+		<!-- Results will be displayed here -->
+	</div>
+	
+	<!-- Product comparison -->
+	<div class="product-comparison">
+		<!-- Comparison table will be displayed here -->
+	</div>
+	
+	<script src="script.js"></script>
+</body>
+</html>
 
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+}
+.search-bar {
+	margin-bottom: 20px;
+}
+.search-input {
+	padding: 10px;
+	width: 300px;
+}
+.search-button {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.search-results {
+	margin-top: 20px;
+}
+.product-comparison {
+	margin-top: 20px;
+}
+
+const searchInput = document.getElementById('search-input');
+const searchButton = document.getElementById('search-button');
+const searchResults = document.getElementById('search-results');
+const productComparison = document.getElementById('product-comparison');
